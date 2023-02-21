@@ -18,4 +18,4 @@ Run this dashboard on local：
 ```
 $ python __init__.py
 ```
-![demonstration](https://i.imgur.com/QVfNU6g.gif)
+![demonstration](/assets/Dash_-_Google_Chrome_2023-02-01_21-08-55_AdobeExpress.gif)
