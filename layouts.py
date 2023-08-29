@@ -99,9 +99,9 @@ update = html.Div([
 ])
 
 tabs = dcc.Tabs([
-        dcc.Tab(label='Fundamental Diagram',value='Fundamental-Diagram',style=tabs_style, selected_style=tab_selected_style),
-        dcc.Tab(label='Speed Flow Diagram',value='Speed-Flow-Diagram',style=tabs_style, selected_style=tab_selected_style),
-        dcc.Tab(label='Hour of Day Traffic Pattern',value='Hour-of-Day-Traffic-Pattern',style=tabs_style, selected_style=tab_selected_style),
+        dcc.Tab(label='Fundamental Diagram',value='Fundamental-Diagram', selected_style=tab_selected_style),
+        dcc.Tab(label='Speed Flow Diagram',value='Speed-Flow-Diagram', selected_style=tab_selected_style),
+        dcc.Tab(label='Hour of Day Traffic Pattern',value='Hour-of-Day-Traffic-Pattern', selected_style=tab_selected_style),
 ],value='Fundamental-Diagram',id='graphtabs',style=tabs_style)
 
 fd_plot = dcc.Graph(id='fundamental_d')
