@@ -1,7 +1,7 @@
 import pandas as pd
 from dash import Dash, dcc, html
 
-vd_id = pd.read_csv("D:/HYYANG_MS_THESIS/VD_data/vd_static_mainline.csv")
+vd_id = pd.read_csv("data/vd_static_mainline.csv")
 vd_id = [vd_id.iloc[i,0].split('-')[3] for i in range(vd_id.shape[0])]
 
 corporate_colors = {

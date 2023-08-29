@@ -11,7 +11,7 @@ day, DB = [], vdplot()
 for i in pd.date_range(start="2020-11-01",end="2020-11-30"):
     d = datetime.strftime(i,'%Y-%m-%d').replace('-','')
     day.append(d)
-    data = vdload(d,'5',path='D:/dashboard/data')
+    data = vdload(d,'5',path='data')
     DB.add(data)
 
 def search_dayofweek(sd,ed,wd):

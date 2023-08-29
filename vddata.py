@@ -25,11 +25,11 @@ def get_index_2(data, mask):
         return temp
 
 class vddata:
-    def __init__(self, date, interval, path='D:/HYYANG_MS_THESIS/VD_data'):
+    def __init__(self, date, interval, path='data'):
         self.date = date
         self.interval = interval
         self.path = path
-        self.spath = "D:/dashboard/data"
+        self.spath = "data"
         self.section = 'all'
         self.flow = pd.read_csv(self.path+"/%s/%s_flow_vd2.csv"%(self.date,self.date), index_col=0, encoding = 'big5')
         self.speed = pd.read_csv(self.path+"/%s/%s_speed_vd2.csv"%(self.date,self.date), index_col=0, encoding = 'big5')

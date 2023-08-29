@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import copy
 class vdload:
-    def __init__(self, date, interval, path='D:/dashboard/data'):
+    def __init__(self, date, interval, path='data'):
         self.date = date
         self.interval = interval
         self.path = path
@@ -20,7 +20,7 @@ class vdplot:
         self.db = {'flow':pd.DataFrame(),'speed':pd.DataFrame(),'occ':pd.DataFrame()}
         self.count = 0
         self.palette = ['#007bff','#6610f2','#6f42c1','#e83e8c','#dc3545','#fd7e14','#ffc107','#28a745','#20c997','#17a2b8']   
-        vd_id = pd.read_csv("D:/HYYANG_MS_THESIS/VD_data/vd_static_mainline.csv")
+        vd_id = pd.read_csv("data/vd_static_mainline.csv")
         self.vd_id = [vd_id.iloc[i,0].split('-')[3] for i in range(vd_id.shape[0])]
         self.width = 1344
         self.height = 1008
